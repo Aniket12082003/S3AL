@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3AL | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header2">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="navlinks" id="navlinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" placeholder="Search.." class="search-box">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Contact Us</h1>
+            <p>Connect with us to explore how we can best support your needs.</p>
+        </div>
+    </section>
+
+    <div class="contact-us">
+        <div class="contact-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0827672336914!2d88.4259373743533!3d22.576007532847214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f970ae9a2e19b5%3A0x16c43b9069f4b159!2sTechno%20India%20University!5e0!3m2!1sen!2sin!4v1719040410356!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <div class="company-details">
+                <h3>Company Details</h3>
+                <i class="fa-solid fa-location-dot"></i>EM-4/1, EM-4, EM Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091<br>
+                <i class="fa-solid fa-phone"></i>+91 9876543210<br>
+                <i class="fa-solid fa-envelope"></i><a href="mailto:info@s3algroup.com"></a>info@s3algroup.com
+            </div>
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                    <button class="send-message-btn" id="open-popup-btn" onclick="event.preventDefault(); return validateForm() && showPopup()">Send Message</button>
+                </form>
+            </div>
+            <div class="popup center">
+                <div class="popup-icon">
+                    <i class="fa fa-check"></i>
+                </div>
+                <div class="popup-title">
+                    Success!!
+                </div>
+                <div class="popup-description">
+                    We appreciate your feedback! To learn more about how we use feedback, please visit our Blog Page.
+                </div>
+                <div class="popup-content"></div>
+                <div class="dismiss-btn">
+                    <button id="dismiss-popup-btn" class="dismiss" onclick="hidePopup()">Dismiss</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i> 
+        <p>Copyright &copy; 2024  by S3AL.</p>
+    </footer>  
+
+
+    <script>
+        const openPopupButton = document.getElementById('open-popup-btn');
+        const dismissPopupButton = document.getElementById('dismiss-popup-btn');
+        const popup = document.querySelector('.popup');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+        let isPopupVisible = false;
+
+        function validateForm() {
+            const nameValue = nameInput.value.trim();
+            const emailValue = emailInput.value.trim();
+            const messageValue = messageInput.value.trim();
+            if (nameValue === '' || emailValue === '' || messageValue === '') {
+                alert('Please fill in all fields.');
+                return false;
+            }
+            return true;
+        }
+
+        function showPopup() {
+            popup.classList.add('popup-visible');
+            console.log("showPopup called!");
+            const viewportHeight = window.innerHeight;
+            const popupHeight = popup.offsetHeight;
+            const scrollTop = window.pageYOffset;
+            const topPosition = calcPopupTop(viewportHeight, popupHeight, scrollTop);
+            popup.style.top = `${topPosition}px`;
+            isPopupVisible = true;
+        }
+
+        function hidePopup() {
+            popup.classList.remove('popup-visible');
+            isPopupVisible = false;
+            window.scrollTo(0, 0);
+            nameInput.value = '';
+            emailInput.value = '';
+            messageInput.value = '';
+        }
+        function calcPopupTop(viewportHeight, popupHeight, scrollTop) {
+            const centeredPosition = (viewportHeight - popupHeight);
+            return centeredPosition + scrollTop;
+        }
+        function handleScroll(event) {
+            if (isPopupVisible) {
+                event.preventDefault();
+            }
+        }
+        openPopupButton.addEventListener('click', validateForm);
+        dismissPopupButton.addEventListener('click', hidePopup);
+        window.addEventListener('scroll', handleScroll);
+    </script>        
+</body>
+</html>

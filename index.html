@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3AL | Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="navlinks" id="navlinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" placeholder="Search.." class="search-box">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Your Identity. Uncompromised.</h1>
+            <p>Discover the power of iris recognition technology – <br> safeguarding your identity with unparalleled precision.</p>
+            <a href="blogs.html" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- benefits -->
+    <section class="benefits">
+        <div class="section-header">
+            <h1>Benefits of Iris Recognition</h1>
+            <p>Learn about the benefits using iris recognition ahead of traditional biometric security systems like fingerprint and facelock.</p>
+        </div>
+        <div class="row">
+            <div class="benefits-row">
+                <h2>Highly Secure</h2>
+                <p>The iris is a well-protected internal organ, making it difficult to tamper with or forge. Unlike fingerprints, iris patterns are stable throughout life and highly unique. Advanced scanners can even detect liveness, ensuring the person is present and not a picture.</p>
+            </div>
+            <div class="benefits-row">
+                <h2>Fast and Convenient</h2>
+                <p>Iris recognition systems are known for their speed. They can scan and match iris patterns in a fraction of a second, making them ideal for applications where quick verification is needed. Additionally, the contactless nature of iris scanning makes it a user-friendly and hygienic experience.</p>
+            </div>
+            <div class="benefits-row">
+                <h2>Accurate Matching</h2>
+                <p>Iris recognition boasts exceptional accuracy. The complex and random patterns of the iris provide a high degree of distinctiveness, leading to very few false positives or negatives. This accuracy makes iris recognition ideal for high-security applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- about us -->
+    <section class="about-us">
+        <div class="section-header">
+            <h1>About S3AL</h1>
+        </div>
+        <div class="row2">
+            <div class="about-us-content">
+                <h2>S3AL: A Revelation</h2>
+                <p>S3AL is a revolutionary company dedicated to providing the best iris recognition technology available. Our mission is to safeguard your identity with top-notch security solutions built on a foundation of constant innovation and reliability. We believe iris recognition is the future of secure identification, and we are committed to pushing the boundaries of this technology to deliver unmatched accuracy and performance.</p>
+                <a href="blogs.html" class="btn">Learn More</a>
+            </div>
+            <div class="about-us-image">
+                <img src="img/about-us.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- usp -->
+    <section class="usp">
+        <div class="section-header">
+            <h1>Why Choose Us?</h1>
+            <p>Discover what sets S3AL apart from the competition and helps it leave its own impact on the business.</p>
+        </div>
+        <div class="row3">
+            <div class="usp-col">
+                <img src="img/usp 1.png">
+                <h2>Seamless Integration, Scalable Solutions</h2>
+                <p>Effortless S3AL integration for your existing infrastructure. Flexible deployment options for any scale.</p>
+            </div>
+            <div class="usp-col">
+                <img src="img/usp 2.png">
+                <h2>Expertise and Support You Can Trust</h2>
+                <p>Proven S3AL implementations by our iris recognition experts. We support you from start to finish.</p>
+            </div>
+            <div class="usp-col">
+                <img src="img/usp 3.png">
+                <h2>Discover the advantages of choosing us.</h2>
+                <p>Fast, secure, and contactless iris recognition. Enhanced security and cost savings through access control.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- cta -->
+    <section class="cta">
+        <h1>Get the Latest Insights on Iris Recognition: <br> Join Our Newsletter</h1>
+        <a href="" class="btn">Enroll Now</a>
+    </section>
+
+    <footer>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i> 
+        <p>Copyright &copy; 2024  by S3AL.</p>
+    </footer>      
+
+    <!-- Back To Top -->
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script>
+        const toTop = document.querySelector(".to-top");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 500) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
+            }
+        })
+    </script>
+</body>
+</html>
