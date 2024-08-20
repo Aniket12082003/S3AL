@@ -274,11 +274,12 @@ nav img{
     .about-us p{
         word-wrap: inherit;
         width: 430px;
+        font-size: 18px;
     }
     .about-us-image{
         padding-top: 10px;
         margin: 0;
-        width: 430px;
+        width: 375px;
     }
     .row3{
         width: 90%;
@@ -351,7 +352,7 @@ footer i:hover{
 
 @media screen and (max-width: 768px){
     .to-top{
-        right: 350px;
+        right: 375px;
     }
 }
 
