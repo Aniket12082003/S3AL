@@ -263,23 +263,23 @@ nav img{
         flex-basis: 31%;
     }
     .row2{
-        width: 768px;
+        width: 90%;
         flex-direction: column;
         margin: 0;
     }
     .about-us-content{
         margin: 10px;
-        width: 400px;
+        width: 90%;
     }
     .about-us p{
         word-wrap: inherit;
-        width: 350px;
+        width: 90%;
         font-size: 16px;
     }
     .about-us-image{
         padding-top: 10px;
         margin: 0;
-        width: 375px;
+        width: 90%;
     }
     .row3{
         width: 90%;
