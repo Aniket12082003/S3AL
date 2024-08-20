@@ -253,6 +253,9 @@ nav img{
     font-weight: 600;
 }
 @media screen and (max-width: 768px){
+    .text-box h1{
+        font-size: 40px;
+    }
     .row{
         width: 90%;
         margin: auto;
