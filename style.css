@@ -173,7 +173,7 @@ nav img{
 }
 .about-us-content{
     flex: 1;
-    width: 600px;
+    width: 80%;
     margin: 0px 25px;
 }
 .about-us-content h2{
@@ -257,16 +257,25 @@ nav img{
         width: 90%;
         margin: auto;
         flex-direction: column;
+        flex-basis: 31%;
     }
     .row2{
-        width: 90%;
-        margin: auto;
+        width: 768px;
         flex-direction: column;
+        margin: 0;
     }
-    .row2 img{
-        width: 90%;
-        margin: auto;
-        padding-top: 20px;
+    .about-us-content{
+        margin: 10px;
+        width: 500px;
+    }
+    .about-us p{
+        word-wrap: inherit;
+        width: 430px;
+    }
+    .about-us-image{
+        padding-top: 10px;
+        margin: 0;
+        width: 430px;
     }
     .row3{
         width: 90%;
