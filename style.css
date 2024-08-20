@@ -273,7 +273,7 @@ nav img{
     }
     .about-us p{
         word-wrap: inherit;
-        width: 430px;
+        width: 400px;
         font-size: 18px;
     }
     .about-us-image{
@@ -352,7 +352,7 @@ footer i:hover{
 
 @media screen and (max-width: 768px){
     .to-top{
-        right: 375px;
+        right: 350px;
     }
 }
 
