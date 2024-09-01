@@ -24,7 +24,7 @@ This repository houses the source code for S3AL's cutting-edge website, designed
 - JavaScript: Enhances the user experience by enabling interactivity like animations, dynamic content updates, and form validation. Additional JavaScript libraries or frameworks might be used for specific functionalities.
 
 ### Hosted Website:
-The website can be viewed by clicking on [S3AL](https://s3al.netlify.app/).
+The website can be viewed by clicking [here](https://s3al.netlify.app/).
 
 ### View the Website Locally:
 Open the index.html file in your web browser to experience the website locally.
